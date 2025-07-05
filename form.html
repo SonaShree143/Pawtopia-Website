@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Contact Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      font-size: 24px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .required {
+      color: #ff5f7e;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background-color: #ccff66;
+      color: #000;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #b4f142;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 480px) {
+      .form-container {
+        padding: 16px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      input,
+      textarea {
+        padding: 10px;
+        font-size: 13px;
+      }
+
+      button {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name <span class="required">*</span></label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email <span class="required">*</span></label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message <span class="required">*</span></label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send message</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !email || !message) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+
+      alert('Message sent successfully!');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

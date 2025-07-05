@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawtopia-About</title>
+        <link rel="icon" href="./image/paw-print.png" type="image/png">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="banner-bg">
+        <!-- NAVIGATION SECTION -->
+            <header>
+            <div class="wrapper">
+                <nav>
+                    <div class="logo-img">
+                       <a href="./index.html"><img src="./image/logonav.png" alt="logo"></a>
+                    </div>
+                    <div class="nav-con">
+                        <ul class="main-ul">
+                            <li><a href="./index.html">Home</a></li>
+                            <li class="active-nav"><a href="./about.html">About</a></li>
+                            <li><a href="about.html#faq">Contact</a></li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropdown-button" onclick="toggleDropdown()" aria-expanded="false">
+                                        Services <span id="arrow" class="fa-solid fa-angle-down"></span>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <ul>
+                                            <li><a href="./daycare-service.html">Pet Daycare</a></li>
+                                            <li><a href="./grooming-service.html">Pet Grooming</a></li>
+                                            <li><a href="./vet-service.html">Pet Veterinary Care</a></li>
+                                            <li><a href="./walking-service.html">Pet Walking</a></li>
+                                            <li><a href="./training-service.html">Pet Training</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="index.html"><button type="button" class="btn-nav">Book now</button></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+        <!-- BANNER SECTION -->
+        <div class="banner-section">
+            <div class="wrapper">
+                <div class="heading-con">
+                    <h1>About Us</h1>
+                </div>
+                <div class="banner-con">
+                    <div class="banner-con-one">
+                        <h1>Who We Are</h1>
+                        <p>Pawtopia believe that pets are more than just animals — they're family. Our mission is to
+                            provide exceptional care and love to your furry friends, ensuring their health, happiness,
+                            and well-being. Whether you have a playful pup, a curious cat, or any adorable companion, we
+                            are here to make their lives better and yours easier.</p>
+                        <p>Your pet's happiness is our priority! 🐾</p>
+                        <button type="button" class="btn-nav">Explore more</button>
+
+                    </div>
+                    <div class="banner-con-two">
+                        <div class="img-con">
+                            <img src="./image/about-banner.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--SECTION ONE -->
+    <div class="section-one">
+        <div class="wrapper">
+            <div class="section-one-head">
+                <h1>Caring Paws, Happy Hearts!</h1>
+            </div>
+            <div class="section-one-con">
+                <div class="section-one-con-one">
+                    <div class="img-con">
+                        <img src="./image/Illustration.png" alt="img">
+                    </div>
+                    <button type="button" class="btn-nav">Explore more</button>
+
+                </div>
+                <div class="section-one-con-one">
+                    <div class="img-con">
+                        <img src="./image/illustartor1.png" alt="img">
+                    </div>
+                    <button type="button" class="btn-nav">Explore more</button>
+
+                </div>
+                <div class="section-one-con-one">
+                    <div class="img-con">
+                        <img src="./image/illustartor2.png" alt="img">
+                    </div>
+                    <button type="button" class="btn-nav">Explore more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SECTION TWO -->
+    <div class="section-two" id="faq">
+        <div class="wrapper">
+            <div class="section-two-head">
+                <h1>Frequently Asked Questions</h1>
+            </div>
+            <div class="section-two-con">
+                <div class="section-two-con-one">
+                    <!-- ACCORDIAN SECTION -->
+                    <div class="accordion">
+                        <div class="accordion-item open">
+                            <button class="accordion-header">
+                                <p>What time can I drop off and pick up my dog?</p>
+                                <span class="accordion-icon">−</span>
+                            </button>
+                            <div class="accordion-content" style="padding: 32px;">
+                                <p>To help establish group play we like all dog drop off by 9am. Please call ahead to
+                                    inquire about an exit bath.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <p>What should my dog bring for daycare?</p>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Leash, ID tags, food/treats, meds (if any), a favorite toy or blanket, and
+                                    vaccination records. Label all items!</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <p>What does my dog do all day?</p>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Your dog enjoys supervised playtime, socializing with other pups, nap breaks, meals
+                                    (if provided), and lots of love from our staff!</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <p>How old does my dog have to be?</p>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Dogs must be at least 12 weeks old and have completed their initial vaccinations to
+                                    join daycare.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                Is my dog supervised at all times? <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Yes! Our trained staff closely supervise all dogs during play and rest to ensure
+                                    safety and fun for everyone.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FORM SECTION -->
+                <div class="section-two-con-two">
+                    <div class="form-container">
+                        <h2>Do you have more questions?</h2>
+                        <form id="contactForm">
+                            <label for="name">Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required />
+
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required />
+
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <div class="btn-con">
+                                <button type="submit">Send message</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+     <footer>
+        <div class="wrapper">
+            <div class="footer-head">
+                <div class="logo-img">
+                    <a href="#banner"> <img src="./image/logofooter.png" alt="logo"></a>
+                </div>
+                <div class="footer-head-con">
+                    <a href="https://www.google.com/maps"><i class="fa-solid fa-location-dot"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-scroll">
+                <a href="#banner">
+                    <i class="fa-solid fa-angle-up"></i>
+                </a>
+            </div>
+
+            <div class="footer-nav">
+                <div class="footer-nav-one">
+                    <h4>Location</h4>
+                    <p>Professional Dog Walking and Pet Care Services</p>
+                    <p>Plot No.608, 4th Cross Lane, KK nagar, West, near Fitbox Gym, Madurai, Tamil Nadu-625020.</p>
+                </div>
+                <div class="footer-nav-two">
+                    <h4>Site Map</h4>
+                    <ul>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="#faqs">Contact</a></li>
+                        <li><a href="./services.html">Services<i class="fa-solid fa-angle-down"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-main">
+                <div class="footer-main-one">
+                    <h2>Are you ready to get started?</h2>
+                </div>
+                <div class="footer-main-two">
+                    <p><a href="https://mail.google.com/">hi@pawtopia.com</a></p>
+                    <a href="#"><button type="button" class="btn-nav">Book now</button></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.easycontactvdailer.icontact&hl=en_IN">
+                        <p>+91 8068392224</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-footer">
+                <a href="#">
+                    <p>Copyright © 2025 Pawtopia. All rights reserved.</p>
+                </a>
+                <p>Designed by <a href="#">Sona Shree.D</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/accordian.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/form.js"></script>
+</body>
+
+</html>

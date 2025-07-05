@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawtopia-Training Service</title>
+        <link rel="icon" href="./image/paw-print.png" type="image/png">
+<link rel="stylesheet" href="./css/grooming-service.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="banner-bg" id="banner">
+
+        <!-- NAVIGATION SECTION -->
+          <header>
+            <div class="wrapper">
+                <nav class="main-ul">
+                    <div class="logo-img">
+                       <a href="./index.html"><img src="./image/logonav.png" alt="logo"></a>
+                    </div>
+                    <div class="nav-con">
+                        <ul>
+                            <li><a href="./index.html" >Home</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="about.html#faq">Contact</a></li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropdown-button" onclick="toggleDropdown()" aria-expanded="false">
+                                        Services <span id="arrow" class="fa-solid fa-angle-down"></span>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <ul>
+                                            <li><a href="./daycare-service.html">Pet Daycare</a></li>
+                                            <li><a href="./grooming-service.html">Pet Grooming</a></li>
+                                            <li><a href="./vet-service.html">Pet Veterinary Care</a></li>
+                                            <li><a href="./walking-service.html">Pet Walking</a></li>
+                                            <li><a href="./training-service.html">Pet Training</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="home.html#appointment"><button type="button" class="btn-nav">Book now</button></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- BANNER SECTION -->
+        <div class="banner-section ">
+            <div class="banner-text-con">
+                <h1>Daycare Service</h1>
+            </div>
+            <div class="banner-main">
+                <div class="banner-con-one">
+                    <div class="banner-con-img">
+                        <img src="./image/service-bg.png" alt="banner-img">
+                    </div>
+                </div>
+
+                 <div class="banner-con-two">
+                <div class="banner-con-text-one">
+                    <h3>Daycare</h3>
+                    <p>Monday - Friday / 8:00am - 10:00pm</p>
+                    <p>Saturday + Sunday / 10:00am - 6:00pm</p>
+                </div>
+                <div class="banner-con-text-two">
+                    <h3>Daycare Option</h3>
+                    <p>Hourly based (for 1hr) - Rs. 200/-</p>
+                    <p>Half Day (under 5hrs) - Rs. 800/-</p>
+                    <p>Full Day (over 9hrs) - Rs. 2000/-</p>
+                </div>
+                <div class="banner-con-text-three">
+                    <h3>Daycare Benefits</h3>
+                    <ul>
+                        <li>Trainer supervised plan</li>
+                        <li>Off-leash exercise and socialization</li>
+                        <li>In-house veterinary supervision</li>
+                        <li>Complimentary New Dog Integrations and Behavior Evaluations</li>
+                        <li>Personalized care to match your dog’s temperament and energy level</li>
+                    </ul>
+                </div>
+                <div class="banner-con-text-four">
+                    <div class="accordion">
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <p>Details</p>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Your dog will love playing all day with like-minded furry friends in our safe and
+                                    supervised playrooms. Not only can you check in on how they are doing via our play
+                                    cams, we will provide daily report cards with photos so you can rest assured they
+                                    are having the time of their life.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <p>Requirements</p>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Health:
+                                    All dogs must be free from parasites, ticks/fleas, and communicable diseases. Any
+                                    dog that poses a risk to the health of the other dogs in our care will not be
+                                    accepted at check-in.
+
+                                    Vaccinations:
+                                    We want all dogs to be safe and healthy. As such, and in compliance with the Madurai
+                                    Department of Health (MDOH) and the recommendation of the TamilNadu Veterinary
+                                    Medical Association, we require proof of the following vaccinations from your
+                                    veterinarian prior to using any of our services.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+           
+        </div>
+    </div>
+
+    <!-- SECTION-ONE -->
+    <div class="section-five">
+        <div class="container">
+            <div class="step active" id="step1">
+                <h1>Make Appointments</h1>
+                <div class="step-header">
+                    <div class="active">
+                        <div class="circle">1</div>
+                        <p>About Care</p>
+                    </div>
+                    <div>
+                        <div class="circle">2</div>
+                        <p>About You</p>
+                    </div>
+                </div>
+                <div class="form-con">
+                    <p><strong>1 Day FREE daycare trial for new clients!</strong><br><small>Reservation required.
+                            Discount cannot be applied during peak periods.</small></p>
+                </div>
+                <form id="form1">
+                    <div class="form-group">
+                        <label>Pet <span style="color: red">*</span></label>
+                        <div class="options">
+                            <label><input type="radio" name="pet" value="Dog" required> Dog</label>
+                            <label><input type="radio" name="pet" value="Cat" required> Cat</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Interested in <span style="color: red">*</span></label>
+                        <div class="checkboxes">
+                            <label><input type="checkbox" name="interest" value="Daycare"> Daycare</label>
+                            <label><input type="checkbox" name="interest" value="Pet Walking"> Pet Walking</label>
+                            <label><input type="checkbox" name="interest" value="Grooming"> Grooming</label>
+                            <label><input type="checkbox" name="interest" value="Training"> Training</label>
+                            <label><input type="checkbox" name="interest" value="Vetcare"> Vetcare</label>
+                        </div>
+                    </div>
+                    <div class="alignment">
+                        <div class="form-group">
+                            <label>Date <span style="color: red">*</span></label>
+                            <input type="date" id="dateField" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Time <span style="color: red">*</span></label>
+                            <select id="timeField" required>
+                                <option value="">Select time</option>
+                                <option>9:00 AM</option>
+                                <option>10:00 AM</option>
+                                <option>11:00 AM</option>
+                                <option>12:00 PM</option>
+                                <option>1:00 PM</option>
+                                <option>2:00 PM</option>
+                                <option>3:00 PM</option>
+                                <option>4:00 PM</option>
+                                <option>5:00 PM</option>
+                                <option>6:00 PM</option>
+                                <option>7:00 PM</option>
+                                <option>8:00 PM</option>
+                                <option>9:00 PM</option>
+                                <option>10:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Stay Duration</label>
+                            <select id="stayDuration">
+                                <option value="Undecided">Undecided</option>
+                                <option value="1 hour">1 hour</option>
+                                <option value="2 hours">2 hours</option>
+                                <option value="3 hours">3 hours</option>
+                                <option value="Half Day">Half Day</option>
+                                <option value="Full Day">Full Day</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btn-con">
+                        <button class="next" type="submit">Start a reservation →</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="step" id="step2">
+                <h1>Make Appointments</h1>
+                <div class="step-header">
+                    <div>
+                        <div class="circle">1</div> About Care
+                    </div>
+                    <div class="active">
+                        <div class="circle">2</div> About You
+                    </div>
+                </div>
+                <form id="form2">
+                    <div class="name-group">
+                        <label>Name <span style="color: red">*</span></label>
+                        <input type="text" required />
+                    </div>
+                    <div class="info-con">
+                        <div class="form-group">
+                            <label>Email <span style="color: red">*</span></label>
+                            <input type="email" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Phone <span style="color: red">*</span></label>
+                            <input type="tel" required />
+                        </div>
+                    </div>
+
+                    <div class="msg-group">
+                        <label>Message <span style="color: red">*</span></label>
+                        <textarea placeholder="Describe your pet, are there any special needs?" required></textarea>
+                    </div>
+                    <div class="btns">
+                        <button class="back" type="button" onclick="goBack()">Back</button>
+                        <button class="next" type="submit">Book</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="step" id="step3">
+                <div class="success">
+                    <img src="./image/appointment-form-bg/success.png" alt="Success" />
+                    <h2>Successfully Booked</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION TWO -->
+    <div class="section-two">
+        <div class="wrapper">
+            <div class="section-two-con">
+                <h1>Tailored Care for Every Paws!</h1>
+
+                <div class="section-two-con-hexa">
+
+                    <a href="#">
+                        <div class="hexagon-wrapper-one ">
+                            <div class="hexagon hexagon-one">
+                                <div class="img-con">
+                                    <img src="./image/dog (1).png" alt="img">
+                                </div>
+                                <div class="text-con">
+                                    <p>Grooming</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="hexagon-wrapper-two">
+                            <div class="hexagon hexagon-two">
+                                <div class="img-con">
+                                    <img src="./image/walking-the-dog.png" alt="img">
+                                </div>
+                                <div class="text-con">
+                                    <p>Pet Walking</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="hexagon-wrapper-three">
+                            <div class="hexagon hexagon-three">
+                                <div class="img-con">
+                                    <img src="./image/dog-training (1).png" alt="img">
+                                </div>
+                                <div class="text-con">
+                                    <p>Day Care</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="hexagon-wrapper-four">
+                            <div class="hexagon hexagon-four">
+                                <div class="img-con">
+                                    <img src="./image/award.png" alt="img">
+                                </div>
+                                <div class="text-con">
+                                    <p>Training</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="hexagon-wrapper-five">
+                            <div class="hexagon hexagon-five">
+                                <div class="img-con">
+                                    <img src="./image/veterinary.png" alt="img">
+                                </div>
+                                <div class="text-con">
+                                    <p>Veterinary Care</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="wrapper">
+            <div class="footer-head">
+                <div class="logo-img">
+                    <a href="#banner"> <img src="./image/logofooter.png" alt="logo"></a>
+                </div>
+                <div class="footer-head-con">
+                    <a href="https://www.google.com/maps"><i class="fa-solid fa-location-dot"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-scroll">
+                <a href="#banner">
+                    <i class="fa-solid fa-angle-up"></i>
+                </a>
+            </div>
+
+            <div class="footer-nav">
+                <div class="footer-nav-one">
+                    <h4>Location</h4>
+                    <p>Professional Dog Walking and Pet Care Services</p>
+                    <p>Plot No.608, 4th Cross Lane, KK nagar, West, near Fitbox Gym, Madurai, Tamil Nadu-625020.</p>
+                </div>
+                <div class="footer-nav-two">
+                    <h4>Site Map</h4>
+                    <ul>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="#faqs">Contact</a></li>
+                        <li><a href="./services.html">Services<i class="fa-solid fa-angle-down"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-main">
+                <div class="footer-main-one">
+                    <h2>Are you ready to get started?</h2>
+                </div>
+                <div class="footer-main-two">
+                    <p><a href="https://mail.google.com/">hi@pawtopia.com</a></p>
+                    <a href="#"><button type="button" class="btn-nav">Book now</button></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.easycontactvdailer.icontact&hl=en_IN">
+                        <p>+91 8068392224</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-footer">
+                <a href="#">
+                    <p>Copyright © 2025 Pawtopia. All rights reserved.</p>
+                </a>
+                <p>Designed by <a href="#">Sona Shree.D</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/accordian.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/appointment-form.js"></script>
+
+</body>
+
+</html>

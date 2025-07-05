@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accordion</title>
+  <link rel="stylesheet" href="./css/accordian.css">
+
+  
+</head>
+<body>
+
+  <div class="accordion">
+    <div class="accordion-item open">
+      <button class="accordion-header">
+        Slot 1
+        <span class="accordion-icon">−</span>
+      </button>
+      <div class="accordion-content" style="padding: 32px;">
+        <p>This is the content of Slot 1.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Slot 2
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>This is the content of Slot 2.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Slot 3
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>This is the content of Slot 3.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Slot 4
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>This is the content of Slot 4.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Slot 5
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>This is the content of Slot 5.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const items = document.querySelectorAll('.accordion-item');
+
+    items.forEach(item => {
+      const header = item.querySelector('.accordion-header');
+      const icon = item.querySelector('.accordion-icon');
+      const content = item.querySelector('.accordion-content');
+
+      // Initialize open item
+      if (item.classList.contains('open')) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        content.style.padding = '32px 16px'; // updated open padding
+      }
+
+      header.addEventListener('click', () => {
+        items.forEach(otherItem => {
+          const otherContent = otherItem.querySelector('.accordion-content');
+          const otherIcon = otherItem.querySelector('.accordion-icon');
+          if (otherItem !== item) {
+            otherItem.classList.remove('open');
+            otherContent.style.maxHeight = null;
+            otherContent.style.padding = '0 16px';
+            otherIcon.textContent = '+';
+          }
+        });
+
+        if (item.classList.contains('open')) {
+          // Close current
+          item.classList.remove('open');
+          content.style.maxHeight = null;
+          content.style.padding = '0 16px';
+          icon.textContent = '+';
+        } else {
+          // Open current
+          item.classList.add('open');
+          content.style.padding = '32px 15px';  // increased padding here
+          content.style.maxHeight = content.scrollHeight + 'px';
+          icon.textContent = '−';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
